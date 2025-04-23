@@ -1,0 +1,45 @@
+[project]
+name = "dia-modal"
+version = "0.1.0"
+classifiers = ["Private :: Do Not Upload"]
+description = "Dia on Modal"
+readme = "README.md"
+requires-python = "==3.12.8"
+dependencies = [
+    "huggingface-hub>=0.30.2",
+    "modal>=0.74.15",
+    "pydantic>=2.11.3",
+    "structlog>=25.2.0",
+    "typer>=0.15.2",
+]
+
+[project.optional-dependencies]
+tts = [
+    "torch>=2.6.0",
+    "nari-tts @ git+https://github.com/nari-labs/dia.git@0790141162f3984844bb397fd67e5afdaeed3914",
+]
+
+[dependency-groups]
+local = ["soundfile>=0.13.1", "sounddevice>=0.5.1", "pydub>=0.25.1"]
+lint = ["pyright>=1.1.399", "ruff>=0.11.6"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.ruff]
+line-length = 120
+include = ["*.py"]
+
+[tool.ruff.lint]
+select = [
+    "E",      # pycodestyle errors
+    "W",      # pycodestyle warnings
+    "I",      # isort
+    "F",      # pyflakes
+    "B",      # flake8-bugbear
+    "C4",     # flake8-comprehensions
+    "RUF021",
+]
+
+[tool.pyright]
+reportMissingTypeStubs = false
