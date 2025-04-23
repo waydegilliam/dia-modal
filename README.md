@@ -1,16 +1,16 @@
 # Dia on Modal
 
-This repo is a basic module for running [nari-labs/Dia-1.6B](https://github.com/nari-labs/dia?tab=readme-ov-file) on [modal.com](https://modal.com/).
+This repo contains a basic (modal.com)[https://modal.com] implementation for doing inference on [nari-labs/Dia-1.6B](https://github.com/nari-labs/dia?tab=readme-ov-file).
 
-We take the existing hyperparameters and Gradio app and create a modal deployment from this.
+We take the existing hyperparameters and pre/post-processing setup [here](https://github.com/nari-labs/dia/blob/main/app.py) and create a Modal deployment from this.
 
 ## Local Setup
 
 **Prerequisites**
 - Macos or Linux
-- (ffmpeg)[https://ffmpeg.org/]
-- (uv)[https://github.com/astral-sh/uv]
-- a (Modal)[https://modal.com/] account
+- [ffmpeg](https://ffmpeg.org/)
+- [uv](https://github.com/astral-sh/uv)
+- a [Modal](https://modal.com/) account
 
 **Installation**
 
