@@ -1,9 +1,8 @@
 # Dia on Modal
 
-This repo contains a basic (modal.com)[https://modal.com] implementation for doing inference on [nari-labs/Dia-1.6B](https://github.com/nari-labs/dia?tab=readme-ov-file).
+This repo contains a basic [modal.com](https://modal.com) implementation for doing inference on [nari-labs/Dia-1.6B](https://github.com/nari-labs/dia?tab=readme-ov-file).
 
 We take the existing hyperparameters and pre/post-processing setup [here](https://github.com/nari-labs/dia/blob/main/app.py) and create a Modal deployment from this.
-
 ## Local Setup
 
 **Prerequisites**
